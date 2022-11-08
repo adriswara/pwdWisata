@@ -12,11 +12,11 @@ $create = mysqli_query($db_connection ,$query);
 
 if ($create) {
     // echo "<p>Pet added succesfully !</p>";
-    echo "<script> alert('Pet added succesfuly !'); </script>";
+    echo "<script> alert('wisata added succesfuly !'); </script>";
 }
 else{
     // echo "<p>Pet add failed !</p>";
-echo "<script> alert('pet add failed!'); </script>";
+echo "<script> alert('wisata add failed!'); </script>";
 }
 
 
