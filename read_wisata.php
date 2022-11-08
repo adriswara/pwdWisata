@@ -48,6 +48,7 @@
                         <th>Deskripsi</th>
                         <th>Harga</th>
                         <th>Jam</th>
+                        <th colspan="2">Action</th>
                     </tr>
 
                     <?php 
@@ -66,6 +67,9 @@
                         <th><?php echo $data['deskripsi_220088']; ?></th>
                         <th><?php echo $data['harga_tiket_220088']; ?></th>
                         <th><?php echo $data['jam_operasional_220088']; ?></th>
+                        <td><a href="edit_wisata.php?id=<?=$data['id_wisata_220088']?>">Edit Pet</a></td>
+                        <td><a href="delete_wisata.php?id=<?=$data['id_wisata_220088']?>"
+                                onclick="return confirm('Are You sure?')">Delete Pet</a></td>
                     </tr>
                     <?php endforeach ?>
                 </table>

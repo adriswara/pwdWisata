@@ -5,11 +5,7 @@ if (isset($_POST)) {
 }
 
 
-$query = 
-"INSERT INTO tempat_wisata_220088 
-(nama_tempat_220088, kota_220088, deskripsi_220088, harga_tiket_220088, jam_operasional_220088) 
-VALUES 
-('$_POST[nama_tempat_220088]','$_POST[kota_220088]','$_POST[deskripsi_220088]','$_POST[harga_tiket_220088]','$_POST[jam_operasional_220088]')";
+$query = "INSERT INTO tempat_wisata_220088 (nama_tempat_220088, kota_220088, deskripsi_220088, harga_tiket_220088, jam_operasional_220088) VALUES ('$_POST[nama_tempat_220088]','$_POST[kota_220088]','$_POST[deskripsi_220088]','$_POST[harga_tiket_220088]','$_POST[jam_operasional_220088]')";
 $create = mysqli_query($db_connection ,$query);
 
 
