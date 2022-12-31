@@ -21,11 +21,11 @@
             </div>
             <div id="menubar">
                 <ul id="menu">
-
                     <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
                     <li><a href="index.php">Home</a></li>
                     <li><a href="examples.php">Harga</a></li>
-                    <li class="selected"><a href="contact.php">Pemesanan</a></li>
+                    <li><a href="add_pemesanan.php">Pemesanan</a></li>
+                    <li class="selected"><a href="read_wisata.php">Input Data</a></li>
                 </ul>
             </div>
         </div>
@@ -48,7 +48,7 @@
                         <th>Deskripsi</th>
                         <th>Harga</th>
                         <th>Jam</th>
-                        <th colspan="2">Action</th>
+                        <th colspan="3">Action</th>
                     </tr>
 
                     <?php 
@@ -67,6 +67,7 @@
                         <th><?php echo $data['deskripsi_220088']; ?></th>
                         <th><?php echo $data['harga_tiket_220088']; ?></th>
                         <th><?php echo $data['jam_operasional_220088']; ?></th>
+                        <td><a href="add_pemesanan.php?id=<?=$data['id_wisata_220088']?>">Pesan Wisata</a></td>
                         <td><a href="edit_wisata.php?id=<?=$data['id_wisata_220088']?>">Edit Wisata</a></td>
                         <td><a href="delete_wisata.php?id=<?=$data['id_wisata_220088']?>"
                                 onclick="return confirm('Are You sure?')">Delete Wisata</a></td>

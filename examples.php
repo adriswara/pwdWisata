@@ -25,7 +25,8 @@
                     <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
                     <li><a href="index.php">Home</a></li>
                     <li class="selected"><a href="examples.php">Harga</a></li>
-                    <li><a href="contact.php">Pemesanan</a></li>
+                    <li><a href="add_pemesanan.php">Pemesanan</a></li>
+                    <li><a href="read_wisata.php">Input Data</a></li>
                 </ul>
             </div>
         </div>

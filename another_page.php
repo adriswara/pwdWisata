@@ -27,7 +27,7 @@
                     <li><a href="examples.php">Examples</a></li>
                     <li><a href="page.php">A Page</a></li>
                     <li class="selected"><a href="another_page.php">Another Page</a></li>
-                    <li><a href="contact.php">Contact Us</a></li>
+                    <li><a href="add_pemesanan.php">add_pemesanan Us</a></li>
                 </ul>
             </div>
         </div>
