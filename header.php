@@ -26,6 +26,7 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="examples.php">Harga</a></li>
                     <li><a href="read_wisata.php">Input Data</a></li>
+                    <li><a href="read_pemesanan.php"> Pemesanan </a></li>
                 </ul>
             </div>
         </div>
