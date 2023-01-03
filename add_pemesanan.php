@@ -48,21 +48,22 @@
 
 
                     <div class="form_settings">
-                        <p><span>Nama</span><input class="pesan" type="text" id="nama" name="nama_pemesanan" readonly
-                                value="<?= $data['nama_tempat_220088']; ?>" <?= $data['nama_tempat_220088']; ?> /></p>
-                        <p><span>Email</span><input class="pesan" type="text" id="email" name="email_pemesanan" required
-                                value="" /></p>
-                        <p><span>Alamat</span><input class="pesan" type="text" id="alamat" name="alamat_pemesanan"
+                        <p><span>Nama</span><input class="pesan" type="text" id="nama" name="nama_pemesanan_220088"
+                                readonly value="<?= $data['nama_tempat_220088']; ?>"
+                                <?= $data['nama_tempat_220088']; ?> /></p>
+                        <p><span>Email</span><input class="pesan" type="text" id="email" name="email_pemesanan_220088"
                                 required value="" /></p>
-                        <p><span>Jumlah</span><input class="pesan" type="text" id="jumlah" name="jumlah_pemesanan"
-                                onkeyup="hitungPesan()" required value="" /></p>
+                        <p><span>Alamat</span><input class="pesan" type="text" id="alamat"
+                                name="alamat_pemesanan_220088" required value="" /></p>
+                        <p><span>Jumlah</span><input class="pesan" type="text" id="jumlah"
+                                name="jumlah_pemesanan_220088" onkeyup="hitungPesan()" required value="" /></p>
 
-                        <p><span>Harga</span><input class="pesan" type="text" id="harga" name="harga_pemesanan" required
-                                value="<?= $data['harga_tiket_220088']; ?>" /></p>
+                        <p><span>Harga</span><input class="pesan" type="text" id="harga" name="harga_pemesanan_220088"
+                                required value="<?= $data['harga_tiket_220088']; ?>" /></p>
                         <p><span>Harga Total</span><input class="pesan" type="text" id="hargaTotal"
                                 name="harga_pemesanan" required value="<?= $data['harga_tiket_220088']; ?>" /></p>
-                        <p><span>Tanggal</span><input class="pesan" type="date" id="tanggal" name="tanggal_pemesanan"
-                                required value="" /></p>
+                        <p><span>Tanggal</span><input class="pesan" type="date" id="tanggal"
+                                name="tanggal_pemesanan_220088" required value="" /></p>
 
                         <!-- <button onclick="pesan()" class="submit" type="submit" value="submit">Pesan</button> -->
                         <tr>

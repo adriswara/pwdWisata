@@ -9,14 +9,13 @@
     <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
 </head>
 
-
 <body>
     <div id="main">
         <div id="header">
             <div id="logo">
                 <div id="logo_text">
                     <!-- class="logo_colour", allows you to change the colour of the text -->
-                    <h1><a href="index.php">Karimun <span class="logo_colour">Jawa</span></a></h1>
+                    <h1><a href="index.html">Karimun <span class="logo_colour">Jawa</span></a></h1>
                     <h2>Jepara Jawa Tengah</h2>
                 </div>
             </div>
@@ -24,9 +23,9 @@
                 <ul id="menu">
                     <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
                     <li><a href="index.php">Home</a></li>
-                    <li class="selected"><a href="examples.php">Harga</a></li>
+                    <li><a href="examples.php">Harga</a></li>
                     <li><a href="add_pemesanan.php">Pemesanan</a></li>
-                    <li><a href="read_wisata.php">Input Data</a></li>
+                    <li class="selected"><a href="read_wisata.php">Input Data</a></li>
                 </ul>
             </div>
         </div>
@@ -35,29 +34,21 @@
 
             <div id="content">
                 <!-- insert the page content here -->
-                <h1>Informasi harga</h1>
-                <p>Kami sajikan rincian biaya wisata karimunjawa untuk anda yang ingin liburan ke karimunjawa.
-                    Rencanakan
-                    budgeting liburan anda karimunjawa dari Jakarta, Bandung, Jogja, Surabaya atau luar wilayah jawa.
-
-                    Sebelum liburan dan menuju ke kabupaten Jepara, kami sarankan sahabat traveler untuk menghitung
-                    biaya
-                    transportasi dari kota anda sampai pelabuhan Jepara. Hitung BBM jika naik kendaraan pribadi, dan
-                    biaya jajan
-                    selama perjalanan. Dan hitung juga tiket transport hingga sampai kota Jepara, apabila menggunakan
-                    kendaraan
-                    umum.</p>
-
-                <p>Biaya perjalanan anda sangat fleksibel tergantung pada kebutuhan dan jarak kota. Selanjutnya, jika
-                    anda sudah
-                    tiba di Kabupaten Jepara, berikut adalah rincian belanja selama wisata Karimun Jawa.
-                </p>
-                <!-- insert the page content here -->
+                <h1>Input basis data</h1>
                 <p>Isi form di bawah ini untuk pemesanan tiket</p>
 
-                <table border="0">
+                <h1>Wisata Adriswara</h1>
+                <h3> List Wisata</h3>
+                <p><a href="add_wisata.php"> Add New Wisata</a></p>
+                <table border="1">
                     <tr>
-
+                        <th>No</th>
+                        <th>Name</th>
+                        <th>Kota</th>
+                        <th>Deskripsi</th>
+                        <th>Harga</th>
+                        <th>Jam</th>
+                        <th colspan="3">Action</th>
                     </tr>
 
                     <?php 
@@ -71,13 +62,15 @@
 
                     <tr>
                         <td><?php echo $i++; ?></td>
-                        <td><?php echo $data['nama_tempat_220088']; ?></td>
-                        <td><?php echo $data['kota_220088']; ?></td>
-                        <td><?php echo $data['deskripsi_220088']; ?></td>
-                        <td><?php echo $data['harga_tiket_220088']; ?></td>
-                        <td><?php echo $data['jam_operasional_220088']; ?></td>
+                        <th><?php echo $data['nama_tempat_220088']; ?></th>
+                        <th><?php echo $data['kota_220088']; ?></th>
+                        <th><?php echo $data['deskripsi_220088']; ?></th>
+                        <th><?php echo $data['harga_tiket_220088']; ?></th>
+                        <th><?php echo $data['jam_operasional_220088']; ?></th>
                         <td><a href="add_pemesanan.php?id=<?=$data['id_wisata_220088']?>">Pesan Wisata</a></td>
-
+                        <td><a href="edit_wisata.php?id=<?=$data['id_wisata_220088']?>">Edit Wisata</a></td>
+                        <td><a href="delete_wisata.php?id=<?=$data['id_wisata_220088']?>"
+                                onclick="return confirm('Are You sure?')">Delete Wisata</a></td>
                     </tr>
                     <?php endforeach ?>
                 </table>
@@ -85,13 +78,10 @@
 
             </div>
         </div>
-
-
-
         <div id="content_footer"></div>
         <div id="footer">
-            Copyright &copy; black &amp; white | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> |
-            <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a
+            Copyright &copy; black &amp; white | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a
+                href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a
                 href="http://www.html5webtemplates.co.uk">HTML5 Web Templates</a>
         </div>
     </div>
